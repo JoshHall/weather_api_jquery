@@ -19,7 +19,7 @@ function searchCity() {
   // log the city in id="city_search"
   let city = $('#city_search').val();
 
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${config.getKey()}`
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${config.getKey()}`
 
   $.get(url, function(res) {
     $('#city_name').text(`${res.name}, ${res.sys.country}`);
