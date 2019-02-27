@@ -5,7 +5,7 @@ let config = new Config();
 
 
 // render the navbar into the header
-$.get('../../components/header.html', function(res) {
+$.get('https://joshhall.github.io/weather_api_jquery/components/header.html', function(res) {
   $('header').html(res);
 });
 
